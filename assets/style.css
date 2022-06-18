@@ -51,12 +51,14 @@ header, footer {
 
 /* Removes unnecessary whitespace/indentation for CSS syntax snippets */
 /* Adds styling */
+/* User can select all on click */
 pre {
     white-space: pre-line;
     background-color: var(--white);
     color: var(--dark-green);
     border-radius: 10px;
     padding: 10px;
+    user-select: all;
 }
 
 
