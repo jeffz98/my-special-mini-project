@@ -6,7 +6,7 @@
     --white: white;
 }
 
-/* Centers the whole page and adapts width setting to contain padding and border */
+/* Centers the whole page, adds color styling and padding, and adapts width setting to contain padding and border */
 body {
     text-align: center;
     box-sizing: border-box;
@@ -26,6 +26,7 @@ header, footer {
 }
 
 /* Styles each card vertically, sets its width, and ensures it stays to the left of its container */
+/* Adds aethetic styling to cards */
 .card {
     display: flex;
     flex-direction: column;
@@ -40,6 +41,7 @@ header, footer {
     color: var(--white);
 }
 
+/* Styles each card's header */
 .card h2 {
     border: 3px var(--redish) solid;
     border-radius: 10px;
@@ -48,6 +50,7 @@ header, footer {
 }
 
 /* Removes unnecessary whitespace/indentation for CSS syntax snippets */
+/* Adds styling */
 pre {
     white-space: pre-line;
     background-color: var(--white);
