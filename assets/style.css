@@ -11,6 +11,7 @@ body {
     text-align: center;
     box-sizing: border-box;
     background-color: var(--redish);
+    padding: 20px;
 }
 
 /* Set text color of header and footer to a dark green */
@@ -31,20 +32,30 @@ header, footer {
     text-align: start;
     flex: 1 0 25%;
 
-    border: 3px var(--light-green) double;
+    border: 5px var(--light-green) double;
+    border-radius: 10px;
     padding: 20px;
+    margin: 20px;
     background: var(--gradient-green);
     color: var(--white);
 }
 
 .card h2 {
     border: 3px var(--redish) solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 0;
 }
 
-/* Removes unnecessary whitespace/indentation */
-code {
+/* Removes unnecessary whitespace/indentation for CSS syntax snippets */
+pre {
     white-space: pre-line;
+    background-color: var(--white);
+    color: var(--dark-green);
+    border-radius: 10px;
+    padding: 10px;
 }
+
 
 /* Media query for tablets */
 @media screen and (min-width: 768px) and (max-width: 991px) {
