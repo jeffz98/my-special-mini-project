@@ -10,5 +10,5 @@ HTML, CSS, Git.
 
 ## Credits
 
-Jeffrey Zhang - Developer
-[Laura Sierra](https://github.com/laurasierra17) - Developer
+- Jeffrey Zhang - Developer
+- [Laura Sierra](https://github.com/laurasierra17) - Developer
