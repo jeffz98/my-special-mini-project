@@ -1,19 +1,17 @@
+/* Centers the whole page and adapts width setting to contain padding and border */
 body {
     text-align: center;
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-}
-
+/* Aligns cards horizontally and ensures they properly wrap in response to viewport size */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
+/* Styles each card vertically, sets its width, and ensures it stays to the left of its container */
 .card {
     display: flex;
     flex-direction: column;
@@ -21,12 +19,14 @@ header {
     flex: 1 0 400px;
 }
 
+/* Removes unnecessary whitespace/indentation */
 code {
     white-space: pre-line;
 }
 
 /* Media query for tablets */
 @media screen and (max-width: 768px) {
+    /* Adjusts card size */
     .card {
         flex: 1 0 300px; 
     }
@@ -34,6 +34,7 @@ code {
 
 /* Media query for mobile phones */
 @media screen and (max-width: 480px) {
+    /* Adjusts card size */
     .card {
         flex: 1 0 200px; 
     }
