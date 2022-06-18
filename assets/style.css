@@ -1,12 +1,15 @@
 :root {
     --light-green: rgb(143, 182, 131);
     --dark-green: rgb(0, 92, 32);
+    --gradient-green: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,92,32,1) 35%);
 }
 
 /* Centers the whole page and adapts width setting to contain padding and border */
 body {
     text-align: center;
     box-sizing: border-box;
+    background: var(--gradient-green);
+    color: white;
 }
 
 /* Aligns cards horizontally and ensures they properly wrap in response to viewport size */
