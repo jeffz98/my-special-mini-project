@@ -2,21 +2,26 @@
     --light-green: rgb(143, 182, 131);
     --dark-green: rgb(0, 92, 32);
     --gradient-green: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,92,32,1) 35%);
+    --redish: rgb(249, 237, 237);
+    --white: white;
 }
 
 /* Centers the whole page and adapts width setting to contain padding and border */
 body {
     text-align: center;
     box-sizing: border-box;
-    background: var(--gradient-green);
-    color: white;
+    background-color: var(--redish);
+}
+
+/* Set text color of header and footer to a dark green */
+header, footer {
+    color: var(--dark-green);
 }
 
 /* Aligns cards horizontally and ensures they properly wrap in response to viewport size */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
 }
 
 /* Styles each card vertically, sets its width, and ensures it stays to the left of its container */
@@ -24,15 +29,16 @@ body {
     display: flex;
     flex-direction: column;
     text-align: start;
-    flex: 1 0 400px;
+    flex: 1 0 25%;
 
     border: 3px var(--light-green) double;
     padding: 20px;
+    background: var(--gradient-green);
+    color: var(--white);
 }
 
 .card h2 {
-    border: 3px var(--dark-green) solid;
-
+    border: 3px var(--redish) solid;
 }
 
 /* Removes unnecessary whitespace/indentation */
@@ -41,7 +47,7 @@ code {
 }
 
 /* Media query for tablets */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     /* Adjusts card size */
     .card {
         flex: 1 0 300px; 
@@ -49,9 +55,9 @@ code {
 }
 
 /* Media query for mobile phones */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     /* Adjusts card size */
     .card {
-        flex: 1 0 200px; 
+        flex: 1 0 400px; 
     }
 }
