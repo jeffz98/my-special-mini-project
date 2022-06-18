@@ -39,6 +39,14 @@ header, footer {
     margin: 20px;
     background: var(--gradient-green);
     color: var(--white);
+
+    transition-duration: 400ms;
+    transition-property: background, transform;
+}
+
+/* Adds transition animation to cards */
+.card:hover {
+    transform: translateY(-10px);
 }
 
 /* Styles each card's header */
